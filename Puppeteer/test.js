@@ -1,7 +1,7 @@
 const { resolve } = require("path");
 const puppeteer = require("puppeteer");
 const searchTermCLI = process.argv.length >= 3 ? process.argv[2] : "Volbeat";
-const searchTermENV = process.argv.SEARCHTXT ?? "Volbeat";
+// const searchTermENV = process.argv.SEARCHTXT ?? "Volbeat";
 
 const automation = async function () {
   const browser = await puppeteer.launch({ headless: false });
